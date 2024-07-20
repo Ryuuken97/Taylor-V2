@@ -6,8 +6,8 @@ const handler = async (m, {
   command,
   args
 }) => {
-  if (!args[0]) throw "Gunakan format .menfes 6282195322106 Haloo";
-  if (args[0]?.startsWith("0")) throw "Gunakan format .menfes 6282195322106 Haloo";
+  if (!args[0]) throw "Gunakan format .menfes 6283897994452 Haloo";
+  if (args[0]?.startsWith("0")) throw "Gunakan format .menfes 6283897994452 Haloo";
   let mention = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[0] ? args[0]?.replace(/[@ .+-]/g, "") + "@s.whatsapp.net" : "",
     txt = (args.length > 1 ? args.slice(1).join(" ") : "") || "",
     q = m.quoted ? m.quoted : m,

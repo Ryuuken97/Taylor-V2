@@ -142,6 +142,6 @@ const more = String.fromCharCode(8206),
   readMore = more.repeat(4001);
 
 function ucapan() {
-  let waktunya = moment.tz("Asia/Makassar").format("HH");
+  let waktunya = moment.tz("Asia/Jakarta").format("HH");
   return waktunya >= 24 ? "Selamat Begadang 🗿" : waktunya >= 18 ? "Selamat malam 🌙" : waktunya >= 15 ? "Selamat sore 🌅" : waktunya > 10 ? "Selamat siang ☀️" : waktunya >= 4 ? "Selamat pagi 🌄" : "Selamat Pagi 🗿";
 }

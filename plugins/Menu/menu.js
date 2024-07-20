@@ -155,10 +155,10 @@ const handler = async (m, {
     let ktnya = ["Kamu nanya?", "No spam...", "Thanks..", "Menampilkan...", "Tunggu...", "Proses...", "Loading...", "Bertanya..", "Hooh..."];
     let ktx = ktnya.getRandom();
     let wib = moment.tz("Asia/Jakarta").format("HH:mm:ss");
-    let wibh = moment.tz("Asia/Makassar").format("HH");
-    let wibm = moment.tz("Asia/Makassar").format("mm");
-    let wibs = moment.tz("Asia/Makassar").format("ss");
-    let wita = moment.tz("Asia/Makassar").format("HH:mm:ss");
+    let wibh = moment.tz("Asia/Jakarta").format("HH");
+    let wibm = moment.tz("Asia/Jakarta").format("mm");
+    let wibs = moment.tz("Asia/Jakarta").format("ss");
+    let wita = moment.tz("Asia/Jakarta").format("HH:mm:ss");
     let waktuwita = `${wibh} H ${wibm} M ${wibs} S`;
     let mode = opts["self"] ? "Private" : "Publik";
     let _package = JSON.parse(await promises.readFile(join(__dirname, "../package.json")).catch(_ => ({}))) || {};
@@ -471,6 +471,6 @@ function clockStringP(ms) {
 }
 
 function ucapan() {
-  let waktunya = moment.tz("Asia/Makassar").format("HH");
+  let waktunya = moment.tz("Asia/Jakarta").format("HH");
   return waktunya >= 24 ? "Selamat Begadang 🗿" : waktunya >= 18 ? "Selamat malam 🌙" : waktunya >= 15 ? "Selamat sore 🌅" : waktunya > 10 ? "Selamat siang ☀️" : waktunya >= 4 ? "Selamat pagi 🌄" : "Selamat Pagi 🗿";
 }

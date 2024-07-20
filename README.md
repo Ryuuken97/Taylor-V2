@@ -27,9 +27,9 @@
   <a href="https://github.com/AyGemuy/Taylor-V2/pulls?q=is%3Apr+is%3Aclosed"><img title="Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/AyGemuy/Taylor-V2?label=PullRequest&color=red&style=flat-square"></a>
 </p>
 
-# `Whatsapp` <a href="https://wa.me/6282195322106">
-[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282195322106) 
-[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6282195322106) 
+# `Whatsapp` <a href="https://wa.me/6283897994452">
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6283897994452) 
+[![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6283897994452) 
 [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GoHmb4noThh92L8FFf79Bh) 
 ---------
 

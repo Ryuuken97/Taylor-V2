@@ -1,7 +1,7 @@
 import moment from "moment-timezone";
 export async function before(m) {
   try {
-    moment.tz.setDefault("Asia/Makassar");
+    moment.tz.setDefault("Asia/Jakarta");
     const chat = db.data.chats?.[m.chat];
     let database = db.data.database;
     database = database.autoclose;
@@ -25,7 +25,7 @@ export async function before(m) {
     const groupMeta = await this.groupMetadata(m.chat);
     const isRestricted = groupMeta?.restrict;
     const isAnnounced = groupMeta?.announce;
-    const now = moment().tz("Asia/Makassar");
+    const now = moment().tz("Asia/Jakarta");
     const currentHour = now.hours();
     const currentMinute = now.minutes();
     const schedule = [];
@@ -71,14 +71,14 @@ export async function before(m) {
         minute,
         message
       } = nextEvent;
-      const nextEventTime = moment().tz("Asia/Makassar").set({
+      const nextEventTime = moment().tz("Asia/Jakarta").set({
         hour: hour,
         minute: minute
       }).format("HH:mm");
       await this.reply(m.chat, `Jadwal berikutnya: Grup akan ${message} pada pukul ${nextEventTime}`, null);
     }
     setInterval(async () => {
-      const now = moment().tz("Asia/Makassar");
+      const now = moment().tz("Asia/Jakarta");
       const currentHour = now.hours();
       const currentMinute = now.minutes();
       for (let {

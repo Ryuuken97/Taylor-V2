@@ -1112,8 +1112,8 @@ export async function handler(chatUpdate) {
       if (m.isBaileys && m.sender === this.user?.jid) return;
       if (!opts.singleprefix && !opts.noprefix && !opts.multiprefix) {
         opts.multiprefix = false;
-        opts.singleprefix = true;
-        opts.noprefix = false;
+        opts.singleprefix = false;
+        opts.noprefix = true;
       }
       let isAcc = opts.singleprefix && (match && match[0] !== null) || (opts.multiprefix || opts.noprefix) && (opts && match && m);
       if (isAcc) {
@@ -1317,7 +1317,7 @@ export async function participantsUpdate({
             },
             message: {
               newsletterAdminInviteMessage: {
-                newsletterJid: "120363204654888455@newsletter",
+                newsletterJid: "120363312012429539@newsletter",
                 caption: welcomeText.replace("@user", "@" + participants[0]?.split("@")[0]) + lapor
               }
             }
@@ -1326,7 +1326,7 @@ export async function participantsUpdate({
               mentionedJid: [participants[0]],
               externalAdReply: {
                 title: htki + (isAddAction ? " Member Join " : " Member Out ") + htka,
-                body: spaces + `Waktu: ${moment.tz("Asia/Makassar").format("HH:mm:ss")}`,
+                body: spaces + `Waktu: ${moment.tz("Asia/Jakarta").format("HH:mm:ss")}`,
                 mediaType: 1,
                 previewType: 0,
                 renderLargerThumbnail: true,
@@ -1350,7 +1350,7 @@ export async function participantsUpdate({
           },
           message: {
             newsletterAdminInviteMessage: {
-              newsletterJid: "120363204654888455@newsletter",
+              newsletterJid: "120363312012429539@newsletter",
               caption: promoteText.trim()
             }
           }
@@ -1448,7 +1448,7 @@ export async function groupsUpdate(groupUpdates) {
       },
       message: {
         newsletterAdminInviteMessage: {
-          newsletterJid: "120363204654888455@newsletter",
+          newsletterJid: "120363312012429539@newsletter",
           caption: text.trim()
         }
       }

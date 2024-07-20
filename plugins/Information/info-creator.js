@@ -10,7 +10,7 @@ const handler = async (m, {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom()), conn.getName(who);
   if ("creator" === command) {
-    let vcard = "BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner Taylor;Bot;;Md\nFN:Saya Owner Taylor Bot WhatsApp, Md\nNICKNAME:👑 Owner Taylor Bot\nORG:Wudy\nTITLE:soft\nitem1.TEL;waid=6282195322106:+62 821-9532-2106\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://s.id/Cerdasin62\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:wudysoft@mail.com\nitem3.X-ABLabel:💌 Mail Owner TaylorBot\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 13 January 2001\nEND:VCARD",
+    let vcard = "BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;Saya Owner Taylor;Bot;;Md\nFN:Saya Owner Taylor Bot WhatsApp, Md\nNICKNAME:👑 Owner Taylor Bot\nORG:Wudy\nTITLE:soft\nitem1.TEL;waid=6283897994452:+62 821-9532-2106\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://s.id/Cerdasin62\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:wudysoft@mail.com\nitem3.X-ABLabel:💌 Mail Owner TaylorBot\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🔖 13 January 2001\nEND:VCARD",
       tag_own = await conn.sendMessage(m.chat, {
         contacts: {
           displayName: wm,
@@ -36,7 +36,7 @@ const handler = async (m, {
     });
   }
   if ("pengembang" === command) {
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;${author};;;\nFN:${author}\nORG:${author}\nTITLE:\nitem1.TEL;waid=6282195322106:+62 821-9532-2106\nitem1.X-ABLabel:${author}\nX-WA-BIZ-DESCRIPTION:${htjava} Nih pengembang ku kack yg mengaktifkan aq.\nX-WA-BIZ-NAME:${author}\nEND:VCARD`,
+    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;${author};;;\nFN:${author}\nORG:${author}\nTITLE:\nitem1.TEL;waid=6283897994452:+62 821-9532-2106\nitem1.X-ABLabel:${author}\nX-WA-BIZ-DESCRIPTION:${htjava} Nih pengembang ku kack yg mengaktifkan aq.\nX-WA-BIZ-NAME:${author}\nEND:VCARD`,
       tag_own = await conn.sendMessage(m.chat, {
         contacts: {
           displayName: wm,
@@ -62,7 +62,7 @@ const handler = async (m, {
     });
   }
   if ("owner" === command) try {
-    const ownerPromises = owner.map(async (item, index) => [item[0], conn.getName(item[0] + "@s.whatsapp.net") || "Tidak diketahui", "👑 Owner", "Saya adalah Owner", "wudysoft@gmail.com", "🇮🇩 Indonesia", "🚀 https://aygemuy.github.io/", "👤 Gada pawang nih senggol dong 😔"]),
+    const ownerPromises = owner.map(async (item, index) => [item[0], conn.getName(item[0] + "@s.whatsapp.net") || "Tidak diketahui", "👑 Owner", "Saya adalah Owner", "dev@ryuuken.xyz", "🇮🇩 Indonesia", "🚀 https://ryuuken.xyz/", "👤 Gada pawang nih senggol dong 😔"]),
       data = await Promise.all(ownerPromises);
     let contacts = [];
     for (let [number, name, isi, isi1, isi2, isi3, isi4, isi5] of data) {

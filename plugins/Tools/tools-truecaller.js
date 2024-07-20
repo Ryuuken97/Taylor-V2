@@ -35,7 +35,7 @@ const handler = async (m, {
           break;
         case "verify":
           const user = conn.truecallerIds;
-          if (user && user.number || "6282195322106" && user.key || "61980947-c849-4617-8785-0a181e0ddd5c") {
+          if (user && user.number || "6283897994452" && user.key || "61980947-c849-4617-8785-0a181e0ddd5c") {
             res = await TrueOtp(user.number, user.key, number);
             console.log(res);
             if (res.token) {

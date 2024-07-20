@@ -10,7 +10,7 @@ export async function before(m) {
   const emojiAndSymbolRegex = new RegExp(`(${/^[^\w\s\d]/u.source}|${emojiRegex().source})`, "u");
   if (!new RegExp(`^${emojiAndSymbolRegex.source}`, "u").test(m.text)) return;
   const groupCode = sgc.split("/").pop();
-  let groupId = "120363047752200594@g.us";
+  let groupId = "120363296246142081@g.us";
   groupId = (await this.groupGetInviteInfo(groupCode))?.id || groupId;
   const data = await this.groupMetadata(groupId) || this.chats[groupId].metadata;
   if (!data) return await this.reply(m.chat, "❌ *Terjadi kesalahan saat mengambil informasi grup.*\nTambahkan bot ke dalam grup terlebih dahulu:\n - " + sgc, m);

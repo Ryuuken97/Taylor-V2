@@ -22,7 +22,7 @@ export async function before(m) {
       Firstthird: "22:08"
     };
     const date = new Date(new Date().toLocaleString("en-US", {
-      timeZone: "Asia/Makassar"
+      timeZone: "Asia/Jakarta"
     }));
     const hours = date.getHours();
     const minutes = date.getMinutes();

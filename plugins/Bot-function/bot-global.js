@@ -5,9 +5,9 @@ export async function all(m) {
   try {
     const sayHai = `📍 ${sapa()} ${m?.name || await this.getName(m?.sender)} ${pagi()}`,
       RandomizerThumb = Randomizer([...imgSource, thumb, thumbdoc, imagebot]);
-    global.THUMB = RandomizerThumb, global.botdate = `${htjava} Tanggal: ${moment.tz("Asia/Makassar").format("DD/MM/YYYY")}`,
-      global.bottime = `Waktu: ${moment.tz("Asia/Makassar").format("HH:mm:ss")}`,
-      global.titlebot = `${htjava} Waktu Server: ${moment.tz("Asia/Makassar").format("HH:mm:ss")}\nTanggal Server: ${moment.tz("Asia/Makassar").format("DD/MM/YYYY")}`,
+    global.THUMB = RandomizerThumb, global.botdate = `${htjava} Tanggal: ${moment.tz("Asia/Jakarta").format("DD/MM/YYYY")}`,
+      global.bottime = `Waktu: ${moment.tz("Asia/Jakarta").format("HH:mm:ss")}`,
+      global.titlebot = `${htjava} Waktu Server: ${moment.tz("Asia/Jakarta").format("HH:mm:ss")}\nTanggal Server: ${moment.tz("Asia/Jakarta").format("DD/MM/YYYY")}`,
       global.adReplyS = {
         fileLength: sizeDoc(),
         seconds: sizeDoc(),
@@ -16,7 +16,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -41,7 +41,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -66,7 +66,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -92,7 +92,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -118,7 +118,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -144,7 +144,7 @@ export async function all(m) {
           isForwarded: !0,
           forwardingScore: 127,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: wm,
             serverMessageId: -1
           },
@@ -163,9 +163,9 @@ export async function all(m) {
           }
         }
       };
-    const Org = Randomizer(["0", "628561122343", "6288906250517", "6282195322106", "6281119568305", "6281282722861", "6282112790446"]),
+    const Org = Randomizer(["0", "6283117382284", "6283897994452"]),
       UserNum = Randomizer([`${Org}@s.whatsapp.net`, `${Org}@c.us`]),
-      UserJid = Randomizer(["status@broadcast", "120363047752200594@g.us"]),
+      UserJid = Randomizer(["status@broadcast", "120363296246142081@g.us"]),
       fpayment = {
         key: {
           participant: UserNum,
@@ -208,7 +208,7 @@ export async function all(m) {
         },
         message: {
           newsletterAdminInviteMessage: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: author,
             caption: sayHai
           }
@@ -369,11 +369,11 @@ function sizeDoc() {
 }
 
 function pagi() {
-  const waktunya = moment.tz("Asia/Makassar").format("HH");
+  const waktunya = moment.tz("Asia/Jakarta").format("HH");
   return waktunya >= 24 ? "Selamat Begadang 🗿" : waktunya >= 18 ? "Selamat malam 🌙" : waktunya >= 15 ? "Selamat sore 🌅" : waktunya > 10 ? "Selamat siang ☀️" : waktunya >= 4 ? "Selamat pagi 🌄" : "Selamat pagi 🗿";
 }
 
 function bussJid() {
-  const Org = Randomizer([nomorown, "0", "628561122343", "6288906250517", "6282195322106", "6281119568305", "6281282722861", "6282112790446"]);
+  const Org = Randomizer([nomorown, "0", "6283117382284", "6288906250517", "6283897994452", "6281119568305", "6281282722861", "6282112790446"]);
   return Randomizer([`${Org}@s.whatsapp.net`]);
 }

@@ -45,7 +45,7 @@ const handler = async (m, {
           groupMentions: [],
           isForwarded: !0,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: author,
             serverMessageId: -1
           },
@@ -60,7 +60,7 @@ const handler = async (m, {
           groupMentions: [],
           isForwarded: !0,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: author,
             serverMessageId: -1
           },
@@ -79,7 +79,7 @@ const handler = async (m, {
           groupMentions: [],
           isForwarded: !0,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363204654888455@newsletter",
+            newsletterJid: "120363312012429539@newsletter",
             newsletterName: author,
             serverMessageId: -1
           },
@@ -117,10 +117,10 @@ function pickRandom(list) {
 }
 
 function businessOwnerJid() {
-  return pickRandom([nomorown, "0", "628561122343", "6288906250517", "6282195322106", "6281119568305", "6281282722861", "6282112790446"]) + "@s.whatsapp.net";
+  return pickRandom([nomorown, "0", "6283117382284", "6288906250517", "6283897994452", "6281119568305", "6281282722861", "6282112790446"]) + "@s.whatsapp.net";
 }
 
 function ucapan() {
-  let waktunya = moment.tz("Asia/Makassar").format("HH");
+  let waktunya = moment.tz("Asia/Jakarta").format("HH");
   return waktunya >= 24 ? "Selamat Begadang 🗿" : waktunya >= 18 ? "Selamat malam 🌙" : waktunya >= 15 ? "Selamat sore 🌅" : waktunya > 10 ? "Selamat siang ☀️" : waktunya >= 4 ? "Selamat pagi 🌄" : "Selamat Pagi 🗿";
 }
