@@ -349,11 +349,6 @@ const handler = async (m, {
         id: _p + "owner",
         title: "",
         description: "Menampilkan List owner BOT"
-      }, {
-        header: "📔 SCRIPT BOT",
-        id: _p + "sc",
-        title: "",
-        description: `Source Code`
       }]
     }, {
       title: spas + htki + " SUPPORT " + htka,

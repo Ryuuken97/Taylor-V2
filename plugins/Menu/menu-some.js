@@ -25,7 +25,7 @@ const handler = async (m, {
     btn = (await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom()), conn.getName(who), flaaa.getRandom(), [{
       urlButton: {
         displayText: "Source Code",
-        url: sgh
+        url: saweria
       }
     }, {
       callButton: {
